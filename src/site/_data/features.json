@@ -1,14 +1,18 @@
 [
     {
-        "title": "🎨 Working Tailwind CSS Pipeline",
-        "details": "So you can build with awesome utility-first CSS right out of the box."
+        "title": "Annual Service",
+        "details": "Vessels take yearly maintenance to operate at peak performance and efficiency. "
     },
     {
-        "title": "💻 Connected Javascript file",
+        "title": "Engine",
         "details": "Start writing code to make your site more interactive. All in one file, or in multiple."
     },
     {
-        "title": "💪 Experience",
-        "details": "Decades of marine maintenance experience across the team."
+        "title": "Electronics",
+        "details": "Wiring and electronics installation."
+    },
+    {
+        "title": "Fiberglass",
+        "details": "Strong, lasting fiberglass repairs."
     }
 ]
