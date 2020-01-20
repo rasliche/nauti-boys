@@ -1,24 +1,31 @@
 ---
 layout: layouts/base.njk
+title: Nauti Boys
+subtitle: Your Florida Keys Mobile Marine Mechanic
 ---
-<h2 class="text-3xl border-b-2">This site is a starting point</h2>
 
-<p>You can take this template and create whatever you want. There are some useful snippets of HTML and great features built right in.
-Modifying it to fit a brochure site is as simple as copying over your assets and copy.</p>
+{# <p>You can take this template and create whatever you want. There are some useful snippets of HTML and great features built right in.
+Modifying it to fit a brochure site is as simple as copying over your assets and copy.</p> #}
 
-<h2 class="text-3xl">Features</h2>
 
-<div class="features sm:flex sm:justify-around">
-{%- for feature in features -%}
-  <div class="sm:w-1/3 m-4 p-2">
-    <p class="font-semibold">{{ feature.title }}</p>
-    <p>{{ feature.details }}</p>
-    {# <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time> #}
-  </div>
-{%- endfor -%}
-</div>
+<section class="features sm:flex sm:justify-around">
+  <h2 class="text-3xl">Services</h2>
+  {%- for feature in features -%}
+    <div class="sm:w-1/3 mt-2">
+      <p class="font-semibold">{{ feature.title }}</p>
+      <p>{{ feature.details }}</p>
+      {# <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time> #}
+    </div>
+  {%- endfor -%}
+</section>
 
-<p>Also includes support for Netlify Functions, because they are awesome for getting work done.</p>
+<section class="features sm:flex sm:justify-around">
+  <h2 class="text-3xl">Contact</h2>
+  <p>Get in touch with us for a custom quote.</p>
+  <a href="/contact/">Fill out the form here.</a>
+</section>
+
+{# <p>Also includes support for Netlify Functions, because they are awesome for getting work done.</p>
 <ul>
   <li><a href="/api/hello">/api/hello</a></li>
-</ul>
+</ul> #}
