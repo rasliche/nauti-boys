@@ -10,12 +10,12 @@ module.exports = [
     {
         "url": "/resources/",
         "title": "Resources"
-    }
+    },
+    {
+        "url": "/contact/",
+        "title": "Contact"
+    },
 ]
-// {
-//     "url": "/contact/",
-//     "title": "Contact"
-// },
 // {
 //     "url": "/map/",
 //     "title": "Map"

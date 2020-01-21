@@ -8,22 +8,26 @@ subtitle: Florida Keys Mobile Marine Mechanic
 Modifying it to fit a brochure site is as simple as copying over your assets and copy.</p> #}
 
 
-<section class="features sm:flex sm:justify-around bg-blue-100">
-  <h2 class="text-3xl">Services</h2>
+<section class="features flex flex-wrap bg-blue-300">
   {%- for feature in features -%}
-    <div class="sm:w-1/3 mt-2">
-      <p class="font-semibold">{{ feature.title }}</p>
+    <div class="sm:w-1/2 mt-2">
+      <h2 class="text-xl text-center sm:text-justify">{{ feature.title }}</h2>
       <p class="text-sm">{{ feature.details }}</p>
       {# <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time> #}
     </div>
   {%- endfor -%}
 </section>
 
-<section class="features sm:flex sm:justify-around bg-green-100">
-  <h2 class="text-3xl">Contact Us</h2>
-  <p class="inline-block w-auto border border-blue-500 rounded">
-    <a href="/contact/">Get in touch with us for a custom quote.</a>
-  </p>
+<section class="text-center mt-4 rounded-lg sm:text-justify bg-green-300">
+  <h2 class="text-xl">Get in touch with us for a custom quote.</h2>
+  <a 
+    class="inline-block sm:hidden w-auto border border-blue-500 rounded" 
+    href="/contact/">
+    Click Here
+  </a> or call us 800-867-5309
+  <div class="hidden sm:block">
+    {% include '_contact_form.njk' %}
+  </div>
 </section>
 
 {# <p>Also includes support for Netlify Functions, because they are awesome for getting work done.</p>

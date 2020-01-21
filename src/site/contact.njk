@@ -1,30 +1,7 @@
 ---
 layout: "layouts/base.njk"
 title: "Contact"
-subtitle: "We want to hear from you. Find us using any of the methods below."
+subtitle: "We want to keep you on the water"
 ---
 
-<form name="customer-contact" action="/resources/" netlify netlify-honeypot="bot-field">
-  <p class="hidden">
-    <label>Don’t fill this out if you're human: </label><input name="bot-field" />
-  </p>
-  <p>
-    <label for="name">Name: </label><input type="text" name="name" />
-  </p>
-  <p>
-    <label for="email">Email: </label><input type="email" name="email" />
-  </p>
-  <p>
-    <label for="reason">Reason: </label>
-    <select type="select" name="reason" />
-        <option value="Annual Service">Annual Service</option>
-        <option value="Engine">Engine</option>
-        <option value="Electronics">Electronics</option>
-        <option value="Fiberglass">Fiberglass</option>
-        <option value="Custom Quote">Custom Quote</option>
-    </select>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+{% include '_contact_form.njk' %}

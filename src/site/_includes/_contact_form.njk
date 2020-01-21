@@ -1,0 +1,32 @@
+<form 
+    name="customer-contact" 
+    class="flex flex-wrap"
+    action="/resources/" 
+    netlify 
+    netlify-honeypot="bot-field">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: </label><input name="bot-field" />
+  </p>
+  <section>
+    <label for="name">Name: </label><input type="text" name="name" required/>
+  </section>
+  <section>
+    <label for="email">Email: </label><input type="email" name="email" />
+  </section>
+  <section>
+    <label for="phone">Phone: </label><input type="text" name="phone" />
+  </section>
+  <section>
+    <label for="reason">Reason: </label>
+    <select type="select" name="reason" />
+        <option value="Annual Service">Annual Service</option>
+        <option value="Engine">Engine</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Fiberglass">Fiberglass</option>
+        <option value="Custom Quote">Custom Quote</option>
+    </select>
+  </section>
+  <section>
+    <button type="submit">Send</button>
+  </section>
+</form>
