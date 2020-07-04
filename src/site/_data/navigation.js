@@ -7,10 +7,10 @@ module.exports = [
         "url": "/about/",
         "title": "About"
     },
-    {
-        "url": "/resources/",
-        "title": "Resources"
-    },
+    // {
+    //     "url": "/resources/",
+    //     "title": "Resources"
+    // },
     {
         "url": "/contact/",
         "title": "Contact"
