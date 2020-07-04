@@ -1,6 +1,5 @@
 (function() {
-  console.log('🔥🔥🔥 Static site template 💻 🍰');
-
+  console.log(`🔥🔥🔥 Static Site Template 💻🍰🐟\n           by @rasliche\nhttps://github.com/rasliche/static-site-template`);
     // // ServiceWorker is a progressive technology. Ignore unsupported browswers.
     // if ('serviceWorker' in navigator) {
     //     console.log('CLIENT: ServiceWorker registration in progress.');
@@ -12,5 +11,4 @@
     // } else {
     //     console.log('CLIENT: ServiceWorker is not supported.');
     // }
-
 })();
