@@ -8,25 +8,68 @@ subtitle: Florida Keys Mobile Marine Mechanic
 Modifying it to fit a brochure site is as simple as copying over your assets and copy.</p> #}
 
 
-<section class="features flex flex-wrap bg-blue-300">
-  {%- for feature in features -%}
-    <div class="sm:w-1/2 mt-2">
-      <h2 class="text-xl text-center sm:text-justify">{{ feature.title }}</h2>
-      <p class="text-sm">{{ feature.details }}</p>
-      {# <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time> #}
+<section class="features min-h-screen w-full p-4 bg-gray-900">
+    {% include 'header.njk' %}
+    <div class="flex flex-wrap max-w-4xl">
+      <div class="sm:w-1/2 mt-2">
+        <h2 class="text-xl text-center sm:text-justify">Annual Service</h2>
+        <p class="text-sm text-gray-500">Your vessel needs yearly maintenance to operate at peak performance and efficiency. Nauti Boys make sure that you can leave the dock with the confidence that your vessel can get you home.</p>
+      </div>
+      <div class="sm:w-1/2 mt-2">
+        <h2 class="text-xl text-center sm:text-justify">Engine Maintenance</h2>
+        <p class="text-sm text-gray-500">Certified mechanics with expertise in Yamaha and Suzuki motors.</p>
+      </div>
+      <div class="sm:w-1/2 mt-2">
+        <h2 class="text-xl text-center sm:text-justify">Electronics</h2>
+        <p class="text-sm text-gray-500">The best GPS, fish finders, marine steroes to get you there and back in style. Installation and troubleshooting, all to ABYC standards.</p>
+      </div>
+      <div class="sm:w-1/2 mt-2">
+        <h2 class="text-xl text-center sm:text-justify">Fiberglass Repair</h2>
+        <p class="text-sm text-gray-500">Strong, lasting fiberglass repairs.</p>
+      </div>
     </div>
-  {%- endfor -%}
 </section>
 
-<section class="text-center mt-4 rounded-lg sm:text-justify bg-green-300">
-  <h2 class="text-xl">Get in touch with us for a custom quote.</h2>
+<section class="contact min-h-screen w-full p-4 text-center sm:text-justify bg-blue-600">
+  <h2 class="text-xl">Get in touch for a custom quote today.</h2>
   <a 
     class="inline-block sm:hidden w-auto border border-blue-500 rounded" 
     href="/contact/">
     Click Here
   </a> or call us 800-867-5309
   <div class="hidden sm:block">
-    {% include '_contact_form.njk' %}
+    <form 
+    name="customer-contact" 
+    class="flex flex-wrap"
+    action="/resources/" 
+    netlify 
+    netlify-honeypot="bot-field">
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: </label><input name="bot-field" />
+      </p>
+      <section>
+        <label for="name">Name: </label><input type="text" name="name" required/>
+      </section>
+      <section>
+        <label for="email">Email: </label><input type="email" name="email" />
+      </section>
+      <section>
+        <label for="phone">Phone: </label><input type="text" name="phone" />
+      </section>
+      <section>
+        <label for="reason">Reason: </label>
+        <select type="select" name="reason" />
+            <option value="Annual Service">Annual Service</option>
+            <option value="Engine">Engine</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fiberglass">Fiberglass</option>
+            <option value="Custom Quote">Custom Quote</option>
+        </select>
+      </section>
+      <section>
+        <button type="submit">Send</button>
+      </section>
+    </form>
   </div>
 </section>
 
