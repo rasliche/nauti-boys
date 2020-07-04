@@ -1,9 +1,9 @@
 <header>
   <nav>
     {% for item in navigation %}
-        <a href="{{ item.url }}" class="mr-4 {% if page.url == item.url %}border-b-2 border-blue-500{% endif %}">{{ item.title }}</a>
+        <a href="{{ item.url }}" class="mr-4 hover:text-gray-200 hover:border-b hover:border-blue-500 text-gray-500 {% if page.url == item.url %}border-b-2 border-blue-500{% endif %}">{{ item.title }}</a>
     {% endfor %}
   </nav>
   <h1 class="text-3xl border-b-2 border-blue-500">{{ title }}</h1>
-    {%- if subtitle %}<p class="subtitle text-gray-700">{{ subtitle | safe }}</p>{% endif %}
+    {%- if subtitle %}<p class="subtitle text-gray-500">{{ subtitle | safe }}</p>{% endif %}
 </header>
