@@ -4,7 +4,7 @@ module.exports = [
         "title": "Home"
     },
     {
-        "url": "/about/",
+        "url": "#about",
         "title": "About"
     },
     // {
@@ -12,7 +12,7 @@ module.exports = [
     //     "title": "Resources"
     // },
     {
-        "url": "/contact/",
+        "url": "#contact",
         "title": "Contact"
     },
 ]
